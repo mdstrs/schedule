@@ -1,0 +1,40 @@
+.main-header {
+  background-color: lighten($color: #000000, $amount: 20);
+  padding: 0;
+  margin-bottom: 31px;
+}
+
+.main-header__container {
+  width: 1140px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+.main-header__logo {
+  margin-bottom: -4px;
+  margin-right: 82px;
+  width: 190px;
+}
+
+.main-header__count {
+  margin: 0;
+  padding: 0;
+  width: 160px;
+  margin-right: 660px;
+}
+
+.count__item {
+  margin-right: 1px;
+  font-family: $bold;
+  color: darken($color: #ffffff, $amount: 30);
+  letter-spacing: 1px;
+}
+
+.count__item--bold {
+  font-family: $bold;
+  color: #fff;
+  letter-spacing: 2px;
+
+}
+

@@ -1,0 +1,51 @@
+.button {
+  width: 162px;
+  box-shadow: 0 0 5px rgba(6, 7, 7, 0.15), inset 0 17px 29px rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  background-color: $theme-color;
+  padding: 12px 0px;
+  padding-left: 38px;
+  color: $white;
+  text-decoration: none;
+  font-family: $bold;
+  vertical-align: middle;
+  font-size: 16px;
+  display: block;
+  position: relative;
+  background-image: linear-gradient(to top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 100%);
+  &::after {
+    position: absolute;
+    content: "";
+    right: 13px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: 2px solid $white;
+  }
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+.button span {
+  padding-top: 11px;
+  padding-bottom: 12px;
+  padding-right: 34px;
+  border-right: 2px solid white;
+}
+
+.button--more {
+  width: 98px;
+
+  display: block;
+  background-color: #f0f0f0;
+  border-radius: 2px;
+  font-family: $normal;
+  color: $gray;
+  text-decoration: none;
+  padding-top: 5px;
+  padding-left: 17px;
+  padding-bottom: 7px;
+
+}
+

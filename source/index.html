@@ -4,55 +4,70 @@
 <head>
   <meta charset="utf-8">
   <title>Schedule</title>
+  <link rel="stylesheet" href="css/normalize.css">
   <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
   <header class="main-header">
+    <div class="main-header__container">
     <a class="main-header__logo">
-      <img class="main-header__logo-image" src="" alt="Логотип Profi Travel" width="" height="">
+      <img class="main-header__logo-image" src="/img/logo.png" alt="Логотип Profi Travel" width="128" height="40">
     </a>
 
-    <p class="main-header__count">
+    <p class="main-header__count count">
       <span class="count__item">Нас уже</span>
       <span class="count__item--bold">115 119 </span>
     </p>
 
     <ul class="main-header__list user-list">
-      <li><a class="user-list__login" href="#">Вход</a></li>
+      <li><a class="user-list__login" href="#"><span class="visually-hidden">Вход</span></a></li>
     </ul>
+  </div>
   </header>
 
   <main>
     <h1 class="page-title">Программа</h1>
     <section class="programm">
-      <time class="programm__date" datetime="2019-07-29">29 июля, понедельник</time>
+      <time class="programm__date" datetime="2019-07-29">
+        <span class="programm__mounth">29 июля,</span>
+        <span class="programm__day-of-the-week">понедельник</span>
+      </time>
       <ul class="programm__list">
         <li class="programm__item">
           <section class="programm__head">
-            <time class="programm__time" datetime="2019-07-29T11:00">11:00</time>
-            <h3 class="programm__title">Пленарное заседание<br>
-              «Как создать условия для туристического развития регионов»
+            <time class="programm__time" datetime="2019-07-29T11:00">11:00
+              <sup class="programm__time--sup">мск</sup>
+            </time>
+            <div class="programm__wrapper--title">
+            <h3 class="programm__title">Пленарное заседание</h3>
+            <span class="programm__description" >«Как создать условия для туристического развития регионов»</span>
             </h3>
-            <a class="button button__more" href="#">Подробнее</a>
-            <a class="button" href="#">Записаться</a>
-            <span class="programm__count">615 участников записались</span>
+            <a class="button--more" href="#"><span>подробнее</span></a>
+          </div>
+          <div class="wrapper">
+            <a class="button" href="#"><span>Записаться</spa></a>
+            <span class="programm__count">615 участников уже записались</span>
+          </div>
           </section>
 
           <section class="experts">
-            <h3 class="experts__title">Эксперты: Очень длинное название компании или государственной структуры</h3>
+            <h3 class="experts__title">Эксперты: <span class="experts__title experts__title--bold">Очень длинное название компании или государственной структуры</spa></h3>
             <ul class="experts__list">
               <li class="experts__item">
+                <img src="img/expert-avatar.svg">
                 <h4 class="experts__name">Салават Юлаев</h4>
                 <span class="experts__about">Председатель Государственного комитета Республики Башкартастан по
                   туризму</span>
               </li>
               <li class="experts__item">
+                  <img src="img/expert-avatar.svg">
                 <h4 class="experts__name">Салават Юлаев</h4>
                 <span class="experts__about">Председатель Государственного комитета Республики Башкартастан по
                   туризму</span>
               </li>
               <li class="experts__item">
+                  <img src="img/expert-avatar.svg">
                 <h4 class="experts__name">Салават Юлаев</h4>
                 <span class="experts__about">Председатель Государственного комитета Республики Башкартастан по
                   туризму</span>
@@ -169,7 +184,7 @@
         <h3 class="programm__title">Тематическая секция<br>
           «Горнолыжные курорты: как добиться высокой круглогодичной загрузки»
         </h3>
-        <a class="button button__more" href="#">Подробнее</a>
+        <a class="button--more" href="#">Подробнее</a>
         <a class="button button" href="#">Записаться</a>
         <span class="programm__count">615 участников записались</span>
       </section>

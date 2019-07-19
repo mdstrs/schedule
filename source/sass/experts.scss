@@ -1,0 +1,24 @@
+.experts {
+  margin-bottom: 200px;
+  padding-left: 191px;
+}
+
+.experts__title {
+   width: 635px;
+   font-family: $normal;
+   font-size: 16px;
+   color: $black;
+}
+
+.experts__title--bold {
+  font-family: $bold;
+}
+
+.experts__list {
+  @include list-reset;
+  display: flex;
+}
+
+.experts__item {
+  width: 255px;
+}
