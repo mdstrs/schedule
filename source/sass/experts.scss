@@ -1,14 +1,18 @@
 .experts {
-  margin-bottom: 200px;
-  padding-left: 191px;
+  padding-bottom: 29px;
+  margin-left: 205px;
+  width: 905px;
+
+  border-top: 1px solid $theme-color;
 }
 
 .experts__title {
+  margin-top: 11px;
    width: 635px;
-   font-family: $normal;
-   font-size: 16px;
-   color: $black;
+   @include font-source-sans(16px, $black, $book);
+   margin-bottom: -13px;
 }
+
 
 .experts__title--bold {
   font-family: $bold;
@@ -21,4 +25,55 @@
 
 .experts__item {
   width: 255px;
+  margin-right: 30px;
+  display: flex;
+  &:last-of-type {
+    margin-right: 0;
+  }
+}
+
+.experts__avatar {
+  padding-top: 20px;
+  margin-right: 10px;
+}
+
+.experts__description {
+  width: 155px;
+  @include font-source-sans(10px, $gray, $light);
+}
+
+.experts__name {
+  padding-top: 1px;
+  @include font-source-sans(16px, $black);
+  margin-bottom: 0;
+}
+
+.experts__button--next {
+  position: relative;
+  &::after {
+    @include pseudo;
+    top: 40px;
+    left: 33px;
+    cursor: pointer;
+    border: solid $gray;
+    border-width: 0 1px 1px 0;
+    display: inline-block;
+    padding: 7px;
+    transform: rotate(-45deg);
+  }
+}
+
+.experts__button--back {
+  position: relative;
+  &::after {
+    @include pseudo;
+    top: 40px;
+    left: 4px;
+    cursor: pointer;
+    border: solid $gray;
+    border-width: 0 1px 1px 0;
+    display: inline-block;
+    padding: 7px;
+    transform: rotate(135deg);
+  }
 }

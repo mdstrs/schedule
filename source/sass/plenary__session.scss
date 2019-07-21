@@ -1,0 +1,40 @@
+.plenary__session {
+  width: 1140px;
+  @include push--auto;
+  background-color: $white;
+  margin-bottom: 52px;
+}
+
+.plenary__session .programm__button--more {
+  color: $theme-color;
+  margin-bottom: -20px;
+}
+
+.plenary__session .programm__button--more span {
+padding: 0;
+}
+
+.plenary__more {
+  background-color: #f0f0f0;
+  width: 630px;
+  padding: 0;
+  margin: 0;
+  margin-left: 206px;
+  margin-bottom: 40px;
+}
+
+.plenary__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.plenary__item {
+  @include font-source-sans(16px, $black, $book, 24px);
+  margin-bottom: 5px;
+  padding-left: 25px;
+  position: relative;
+  &:first-child {
+    padding-top: 15px;
+  }
+}

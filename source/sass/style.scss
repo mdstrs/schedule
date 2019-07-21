@@ -11,10 +11,16 @@
 @import "programm.scss";
 @import "button.scss";
 @import "experts.scss";
+@import "plenary__session.scss";
+@import "main-footer.scss";
+
+@import "../../node_modules/node-normalize-scss/normalize";
 
 body {
   background-color: lighten($color: #3399ff, $amount: 20);
   background-image: url(/img/background.jpg);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: 100% 100%;
+
+  background-attachment: scroll;
 }

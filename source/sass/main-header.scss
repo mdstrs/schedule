@@ -6,7 +6,7 @@
 
 .main-header__container {
   width: 1140px;
-  margin: 0 auto;
+  @include push--auto;
   display: flex;
   align-items: center;
 }
