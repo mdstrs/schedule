@@ -1,14 +1,25 @@
 .main-footer {
   background-color: $black;
-
 }
 
 .main-footer .wrapper {
-  width: 1145px;
+  width: 320px;
   display: flex;
-  margin: 0 auto;
+  flex-direction: column;
+  @include push--auto;
   padding-top: 33px;
   padding-bottom: 50px;
+}
+
+@media (min-width: 1140px) {
+  .main-footer .wrapper {
+    width: 1145px;
+    display: flex;
+    flex-direction: row;
+
+    padding-top: 33px;
+    padding-bottom: 50px;
+  }
 }
 
 .main-footer__title {
@@ -62,6 +73,7 @@
   color: $white;
   font-family: $light;
   font-size: 13px;
+  text-decoration: none;
 }
 
 .leading__name,

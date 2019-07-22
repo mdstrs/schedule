@@ -1,8 +1,8 @@
 {
-  "name": "pognali-17",
-  "version": "17.0.0",
+  "name": "schedule",
+  "version": "1.0",
   "private": true,
-  "description": "Личный проект «Погнали» от HTML Academy",
+  "description": "Тестовое задание profi travel",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.x",
     "autoprefixer": "9.5.x",
@@ -40,6 +40,7 @@
     "node": "8.16"
   },
   "dependencies": {
-    "csscomb": "^4.3.0"
+    "csscomb": "^4.3.0",
+    "package-name": "^0.1.0"
   }
 }
