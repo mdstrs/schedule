@@ -9,6 +9,8 @@ var autoprefixer = require("autoprefixer");
 var server = require("browser-sync").create();
 var gulp = require('gulp');
 var sass = require('gulp-sass');
+var gulp = require('gulp');
+var sass = require('gulp-sass');
 
 gulp.task("css", function () {
   return gulp.src("source/sass/style.scss")
@@ -34,6 +36,16 @@ gulp.task("server", function () {
 
   gulp.watch("source/sass/**/*.{scss,sass}", gulp.series("css"));
   gulp.watch("source/*.html").on("change", server.reload);
+});
+
+gulp.task('sass', function () {
+  gulp.src('path/to/input.scss')
+    .pipe(sass({
+      // includePaths: require('node-normalize-scss').with('other/path', 'another/path')
+      // - or -
+      includePaths: require('node-normalize-scss').includePaths
+    }))
+    .pipe(gulp.dest('path/to/output.css'));
 });
 
 gulp.task('sass', function () {

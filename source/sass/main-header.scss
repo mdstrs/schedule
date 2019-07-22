@@ -5,8 +5,35 @@
 }
 
 .main-header__container {
+  width: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-header__logo {
+  margin-bottom: -4px;
+
+  width: 190px;
+}
+
+.main-header__count {
+  margin: 0;
+  padding: 0;
+  padding-top: 10px;
+  width: 160px;
+}
+
+
+.main-header {
+  background-color: lighten($color: #000000, $amount: 20);
+  padding: 0;
+  margin-bottom: 31px;
+}
+
+@media (min-width: 1140px) {
+.main-header__container {
   width: 1140px;
-  margin: 0 auto;
+  @include push--auto;
   display: flex;
   align-items: center;
 }
@@ -22,8 +49,8 @@
   padding: 0;
   width: 160px;
   margin-right: 660px;
+ }
 }
-
 .count__item {
   margin-right: 1px;
   font-family: $bold;
@@ -31,10 +58,12 @@
   letter-spacing: 1px;
 }
 
+
 .count__item--bold {
   font-family: $bold;
   color: #fff;
   letter-spacing: 2px;
-
 }
+
+
 
