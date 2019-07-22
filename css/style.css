@@ -1,18 +1,18 @@
 @font-face {
   font-family: "FiraSansLight";
-  src: url("/fonts/FiraSansLight/FiraSansLight.woff"), url("/fonts/FiraSansLight/FiraSansLight.ttf"); }
+  src: url("../fonts/FiraSansLight/FiraSansLight.woff"), url("../fonts/FiraSansLight/FiraSansLight.ttf"); }
 
 @font-face {
   font-family: "FiraSansReg";
-  src: url("/fonts/FiraSansReg/FiraSans.woff"), url("/fonts/FiraSansReg/FiraSans.ttf"); }
+  src: url("../fonts/FiraSansReg/FiraSans.woff"), url("../fonts/FiraSansReg/FiraSans.ttf"); }
 
 @font-face {
   font-family: "FiraSansBold";
-  src: url("/fonts/FiraSansBold/FiraSans-Bold.woff"), url("/fonts/FiraSansBold/FiraSans-Bold.ttf"); }
+  src: url("../fonts/FiraSansBold/FiraSans-Bold.woff"), url("../fonts/FiraSansBold/FiraSans-Bold.ttf"); }
 
 @font-face {
   font-family: "FiraSansBook";
-  src: url("/fonts/FiraSansBook/FiraSans-Book.otf"); }
+  src: url("../fonts/FiraSansBook/FiraSans-Book.otf"); }
 
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
@@ -1197,7 +1197,7 @@ template {
 
 body {
   background-color: #99ccff;
-  background-image: url(/img/background.jpg);
+  background-image: url(../img/background.jpg);
   background-repeat: no-repeat;
   background-size: 100% 100%;
   min-width: 320px;
