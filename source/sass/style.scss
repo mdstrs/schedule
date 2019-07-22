@@ -1,3 +1,19 @@
+body {
+  background-color: lighten($color: #3399ff, $amount: 20);
+  background-image: url(../img/background.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  min-width: 320px;
+  background-attachment: scroll;
+  margin: 0;
+
+  padding: 0;
+}
+
+.overflow-wrapper {
+  overflow-x: hidden;
+}
+
 // Шрифты
 @import "global/fonts.scss";
 @import "global/vars.scss";
@@ -15,16 +31,3 @@
 @import "main-footer.scss";
 
 @import "../../node_modules/node-normalize-scss/normalize";
-
-body {
-  background-color: lighten($color: #3399ff, $amount: 20);
-  background-image: url(../img/background.jpg);
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  min-width: 320px;
-  background-attachment: scroll;
-  margin: 0;
-  overflow-x: hidden;
-  padding: 0;
-}
-
