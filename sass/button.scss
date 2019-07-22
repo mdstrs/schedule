@@ -1,0 +1,241 @@
+.programm__button {
+  min-width: 85px;
+  box-shadow: 0 0 5px rgba(6, 7, 7, 0.15), inset 0 17px 29px rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  background-color: $theme-color;
+  padding: 12px 0px;
+  padding-left: 17px;
+  color: $white;
+  text-decoration: none;
+  font-family: $bold;
+  vertical-align: middle;
+  font-size: 16px;
+  display: block;
+  position: relative;
+  background-image: linear-gradient(to top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 100%);
+  &::after {
+    position: absolute;
+    content: "";
+    right: 8px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: 2px solid $white;
+  }
+  &:hover {
+    opacity: 0.8;
+  }
+  & span {
+    padding-top: 11px;
+    padding-bottom: 12px;
+    padding-right: 34px;
+    position: relative;
+    &::before {
+      position: absolute;
+      content: "";
+      display: block;
+      width: 1px;
+      left: 90px;
+      top: 0px;
+      height: 42px;
+      background: $white;
+    }
+  }
+}
+
+.programm__button--disabled {
+  min-width: 85px;
+  margin-top: 30px;
+  border-radius: 20px;
+  background-color: #f2f2f2;
+  padding: 12px 0px;
+  padding-left: 17px;
+  color: $theme-color;
+  text-decoration: none;
+  font-family: $bold;
+  vertical-align: middle;
+  font-size: 16px;
+  display: block;
+  position: relative;
+  &::after {
+    position: absolute;
+    content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='13' viewBox='0 0 16 13'%3E%3Cg%3E%3Cg%3E%3Cpath fill='%2339f' d='M.012 6.869l2.174-2.174L5.821 8.33 13.816.317l2.18 2.18L5.829 12.685z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    right: 8px;
+  }
+  &:hover {
+    opacity: 0.8;
+  }
+  & span {
+    padding-top: 11px;
+    padding-bottom: 12px;
+    padding-right: 34px;
+    position: relative;
+    &::before {
+      position: absolute;
+      content: "";
+      display: block;
+      width: 1px;
+      left: 105px;
+      top: 0px;
+      height: 42px;
+      background: $white;
+    }
+  }
+}
+
+.programm__button--watch {
+  width: 162px;
+  margin-top: 29px;
+  border-radius: 20px;
+  background-color: #f2f2f2;
+  padding: 12px 0px;
+  padding-right: 38px;
+  color: $theme-color;
+  text-decoration: none;
+  font-family: $bold;
+  vertical-align: middle;
+  font-size: 16px;
+  display: block;
+  position: relative;
+  &::after {
+    position: absolute;
+    content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='11' height='13' viewBox='0 0 11 13'%3E%3Cg%3E%3Cg%3E%3Cpath fill='%23fff' d='M10.574 6.81L-.043 12.939V.679z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    right: 0px;
+    top: 0px;
+    box-shadow: 0 0 5px rgba(6, 7, 7, 0.15), inset 0 17px 29px rgba(255, 255, 255, 0.1);
+    border-radius: 0 21px 21px 0;
+    padding: 12px;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    background-color: #3399ff;
+    background-image: linear-gradient(to top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 100%);
+
+  }
+  &:hover {
+    opacity: 0.8;
+  }
+  & span {
+    padding-top: 11px;
+    padding-bottom: 12px;
+
+    padding-left: 44px;
+    color: $theme-color;
+  }
+}
+
+@media (min-width: 1140px) {
+  .programm__button {
+    width: 162px;
+    box-shadow: 0 0 5px rgba(6, 7, 7, 0.15), inset 0 17px 29px rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    background-color: $theme-color;
+    padding: 12px 0px;
+    padding-left: 38px;
+    color: $white;
+    text-decoration: none;
+    font-family: $bold;
+    vertical-align: middle;
+    font-size: 16px;
+    display: block;
+    position: relative;
+    background-image: linear-gradient(to top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 100%);
+    &::after {
+      position: absolute;
+      content: "";
+      right: 13px;
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      border: 2px solid $white;
+    }
+    &:hover {
+      opacity: 0.8;
+    }
+    & span {
+
+      position: relative;
+      &::before {
+        position: absolute;
+        content: "";
+        display: block;
+        width: 1px;
+        left: 120px;
+        top: 0px;
+        height: 42px;
+        background: $white;
+      }
+    }
+  }
+
+  .programm__button--disabled {
+    width: 162px;
+    margin-top: 30px;
+    border-radius: 20px;
+    background-color: #f2f2f2;
+    padding: 12px 0px;
+    padding-right: 38px;
+    color: $theme-color;
+    text-decoration: none;
+    font-family: $bold;
+    vertical-align: middle;
+    font-size: 16px;
+    display: block;
+    position: relative;
+    &::after {
+      position: absolute;
+      content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='13' viewBox='0 0 16 13'%3E%3Cg%3E%3Cg%3E%3Cpath fill='%2339f' d='M.012 6.869l2.174-2.174L5.821 8.33 13.816.317l2.18 2.18L5.829 12.685z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+      right: 13px;
+    }
+    &:hover {
+      opacity: 0.8;
+    }
+    & span {
+      padding-left: 34px;
+      position: relative;
+      &::before {
+
+        position: absolute;
+        content: "";
+        display: block;
+        width: 1px;
+        left: 160px;
+        top: 0px;
+        height: 42px;
+        background: $white;
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.programm__button--more {
+  width: 98px;
+
+  display: block;
+  background-color: #f0f0f0;
+  border-radius: 2px;
+  font-family: $normal;
+  color: $gray;
+  text-decoration: none;
+  padding-top: 5px;
+  padding-left: 17px;
+  padding-bottom: 7px;
+
+}
+
+

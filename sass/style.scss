@@ -1,0 +1,30 @@
+// Шрифты
+@import "global/fonts.scss";
+@import "global/vars.scss";
+@import "global/visually-hidden.scss";
+@import "global/mixin.scss";
+
+//Общие блоки
+@import "main-header.scss";
+@import "user-list.scss";
+@import "page-title.scss";
+@import "programm.scss";
+@import "button.scss";
+@import "experts.scss";
+@import "plenary__session.scss";
+@import "main-footer.scss";
+
+@import "../../node_modules/node-normalize-scss/normalize";
+
+body {
+  background-color: lighten($color: #3399ff, $amount: 20);
+  background-image: url(/img/background.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  min-width: 320px;
+  background-attachment: scroll;
+  margin: 0;
+  overflow-x: hidden;
+  padding: 0;
+}
+
