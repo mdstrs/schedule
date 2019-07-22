@@ -1,3 +1,16 @@
+body {
+  background-color: #99ccff;
+  background-image: url(../img/background.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  min-width: 320px;
+  background-attachment: scroll;
+  margin: 0;
+  padding: 0; }
+
+.overflow-wrapper {
+  overflow-x: hidden; }
+
 @font-face {
   font-family: "FiraSansLight";
   src: url("../fonts/FiraSansLight/FiraSansLight.woff"), url("../fonts/FiraSansLight/FiraSansLight.ttf"); }
@@ -1194,16 +1207,5 @@ template {
  */
 [hidden] {
   display: none; }
-
-body {
-  background-color: #99ccff;
-  background-image: url(../img/background.jpg);
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  min-width: 320px;
-  background-attachment: scroll;
-  margin: 0;
-  overflow-x: hidden;
-  padding: 0; }
 
 /*# sourceMappingURL=style.css.map */
